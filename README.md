@@ -5,7 +5,20 @@ Resume classification is the task of automatically categorizing resumes into pre
  
 # 1D-Convolutional Neural Network
 
-1D Convolutional Neural Network (1D CNN) is a type of Convolutional Neural Network that is used for processing 1-dimensional data, such as signals and sequences. It is commonly used for tasks such as speech recognition, audio classification, and natural language processing. 1D CNN applies filters to local regions of the input, and slides the filters along the input to learn local patterns. The use of convolutional layers allows 1D CNN to maintain the spatial information in the input data while reducing the number of parameters in the model, resulting in a more efficient and effective learning process.
+**1D Convolutional Neural Network** (1D CNN) is a type of Convolutional Neural Network that is used for processing 1-dimensional data, such as signals and sequences. It is commonly used for tasks such as speech recognition, audio classification, and natural language processing. 1D CNN applies filters to local regions of the input, and slides the filters along the input to learn local patterns. The use of convolutional layers allows 1D CNN to maintain the spatial information in the input data while reducing the number of parameters in the model, resulting in a more efficient and effective learning process.
+A 1D Convolutional Neural Network (1D CNN) architecture consists of several key components:
+
+**Input layer:** The input layer accepts the 1-dimensional data that the network will process.
+
+**Convolutional layer:** One or more convolutional layers apply filters to local regions of the input data and produce feature maps. The filters slide along the input data and learn local patterns in the data.
+
+**Pooling layer:** One or more pooling layers down-sample the feature maps produced by the convolutional layer, reducing their spatial dimensions and preserving the most important information.
+
+**Fully connected layer:** One or more fully connected layers use the output of the pooling layer as input to make predictions based on the learned features.
+
+**Output layer:** The output layer produces the final prediction for the input data, typically in the form of a probability distribution over the possible classes.
+
+The architecture of a 1D CNN can vary depending on the specific task and the size and complexity of the input data. Larger and more complex architectures may include additional convolutional, pooling, and fully connected layers, as well as dropout layers to prevent overfitting. The choice of the architecture will depend on the specifics of the problem and the available computational resources.
 
 
 # 1D-CNN and NLP
@@ -23,6 +36,15 @@ Includes code for data preprocessing, 1D-CNN model and code to save the model in
 
 **Model accuracy is:**  0.9584774971008301
 
+
+# Training and Validation Graphs
+Training and validation graphs are visual representations of the performance of a machine learning model during the training and validation phases. These graphs are useful for monitoring the progress of training and for assessing the quality of the model.
+
+**Loss plot:** The loss plot shows the value of the loss function over each epoch of training. The loss function measures how well the model is performing on the training data, and a decreasing trend in the loss plot indicates that the model is improving over time.
+
+**Accuracy plot:** The accuracy plot shows the accuracy of the model on the training or validation data over each epoch of training. A rising trend in the accuracy plot indicates that the model is improving over time, while a declining trend may indicate overfitting or a poorly trained model.
+ 
+  
 
 ![image](https://user-images.githubusercontent.com/86981617/215507085-62b52bed-428a-4006-86ee-29f69b317ca7.png)
 
